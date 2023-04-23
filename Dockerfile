@@ -8,6 +8,6 @@ RUN npm i && npm cache clean --force
 
 COPY . ./
 
-ENV BACKEND_URL=http://localhost:5555
+EXPOSE 3000
 
 CMD ["npm", "run", "dev"]
